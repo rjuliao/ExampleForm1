@@ -24,5 +24,9 @@
             }
         });
         $A.enqueueAction(action);
+    },
+
+    cancelCreation : function(component, helper, event) {
+        window.history.back();
     }
 })
