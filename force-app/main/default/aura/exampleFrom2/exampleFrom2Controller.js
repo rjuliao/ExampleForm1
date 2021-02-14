@@ -1,8 +1,8 @@
 ({
-    createAccount  : function(component, event, helper) {
+    createContact  : function(component, event, helper) {
         var action = component.get("c.saveContact");
         action.setParams({
-            "cntRec":component.get("v.cnt")
+            "cnt":component.get("v.cnt")
         });
         action.setCallback(this, function(response){
             if(response.getState()==='SUCCESS'){
