@@ -10,7 +10,7 @@
             </div>
             <div class="slds-m-around--medium">
                 <button class="slds-button slds-button--brand" onclick="{!c.createContact}">Save</button>
-                <button class="slds-button slds-button--brand" onclick="{!c.cancelContact}">Cancel</button>
+                <button class="slds-button slds-button--brand" onclick="history.back()">Cancel</button>
             </div>
         </div>
     </div>
