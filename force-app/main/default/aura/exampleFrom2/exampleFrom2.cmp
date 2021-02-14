@@ -10,8 +10,8 @@
                     </div>
                 </div>
                 <div class="slds-m-around--medium">
-                    <button class="slds-button slds-button--brand" onclick="{!c.createContact}">Save</button>
-                    <button class="slds-button slds-button--brand" type="cancel" onclick="{!c.cancelCreation}">Cancel</button>
+                    <lightning:button label="Create Contact"  onclick="{!c.createContact}" variant="brand" class="slds-m-top_medium"/>
+                    <lightning:button label="Cancel" type="cancel" onclick="{!c.cancelCreation}" class="slds-m-top_medium"/>
                 </div>
             </div>
         </div>
