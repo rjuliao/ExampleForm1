@@ -1,0 +1,17 @@
+<aura:component implements="lightning:actionOverride" access="global" controller="ControllerAcc" >
+    <aura:attribute name="cnt" type="Contact" default="{'sobjectType': 'Account', 'Name':'','Description':''}"/>
+    <div class="slds-m-around--xx-large">
+        <div class="slds-form--stacked">
+            <div class="slds-form-element">
+                <div class="slds-form-element__control">
+                    <ui:inputText aura:id="contLName" label="Last Name" value="{!v.cnt.LastName}" class="slds-input"/>
+                    <ui:inputText aura:id="contEmail" label="Email" value"{!v.cnt.Email}" class="slds-input"/>
+                </div>
+            </div>
+            <div class="slds-m-around--medium">
+                <button class="slds-button slds-button--brand" onclick="{!c.createContact}">Save</button>
+                <button class="slds-button slds-button--brand" onclick="{!c.cancelContact}">Cancel</button>
+            </div>
+        </div>
+    </div>
+</aura:component>	
